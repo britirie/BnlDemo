@@ -5,10 +5,10 @@
     <!-- Navigator toggle button will render only if we have a drawer -->
     <oj-bind-if test="[[ document.querySelector('oj-vb-fragment[name=\'shell-drawer\']') ]]">
       <div class="oj-flex-bar">
-        <oj-button on-oj-action="[[$listeners.toggleDrawer]]" chroming="borderless"
-                   display="icons">
+        <oj-button on-oj-action="[[$listeners.toggleDrawer]]" chroming="borderless" display="icons">
           <span slot="startIcon" class="oj-ux-ico-menu"></span>
-          <span><oj-bind-text value="[[$application.translations.app.app_title_navigation_drawer]]"></oj-bind-text></span>
+          <span><oj-bind-text
+              value="[[$application.translations.app.app_title_navigation_drawer]]"></oj-bind-text></span>
         </oj-button>
       </div>
     </oj-bind-if>
@@ -28,7 +28,7 @@
 
 <!-- Page specific title and actions for desktop formfactor -->
 <div class="oj-flex">
-  <h1 class="oj-header oj-flex-item oj-sm-12 oj-md-12">Departments</h1>
+  <h1 class="oj-header oj-flex-item oj-sm-12 oj-md-12">Barb Departments</h1>
 </div>
 <div class="oj-flex">
   <oj-toolbar id="oj-toolbar-for-oj-table-1410790259-1" chroming="solid" class="oj-flex-item oj-sm-12 oj-md-12">
@@ -53,5 +53,3 @@
     </template>
   </oj-table>
 </div>
-
-
