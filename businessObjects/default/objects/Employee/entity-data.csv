@@ -1,0 +1,10 @@
+id,creationDate,lastUpdateDate,createdBy,lastUpdatedBy,name,department,hireDate,email
+1,2023-05-05T19:10:12.614,2023-05-05T19:10:12.614,barbara.stephenson@bonnellaluminum.com,barbara.stephenson@bonnellaluminum.com,Elizabeth Davis,1,2006-06-17,edavis@example.com
+2,2023-05-05T19:10:12.615,2023-05-05T19:10:12.615,barbara.stephenson@bonnellaluminum.com,barbara.stephenson@bonnellaluminum.com,James Miller,1,2008-09-21,jmiller@example.com
+3,2023-05-05T19:10:12.615,2023-05-05T19:30:15,barbara.stephenson@bonnellaluminum.com,barbara.stephenson@bonnellaluminum.com,Jennifer Garcia,5,2004-01-13,jgarcia@example.com
+4,2023-05-05T19:10:12.615,2023-05-05T19:10:12.615,barbara.stephenson@bonnellaluminum.com,barbara.stephenson@bonnellaluminum.com,Mark Williams,3,2009-01-03,mwilliams@example.com
+5,2023-05-05T19:10:12.616,2023-05-05T19:10:12.616,barbara.stephenson@bonnellaluminum.com,barbara.stephenson@bonnellaluminum.com,Sarah Brown,2,2010-05-21,sbrown@example.com
+6,2023-05-05T19:10:12.616,2023-05-05T19:10:12.616,barbara.stephenson@bonnellaluminum.com,barbara.stephenson@bonnellaluminum.com,David Smith,1,2008-06-25,dsmith@example.com
+7,2023-05-05T19:10:12.616,2023-05-05T19:10:12.616,barbara.stephenson@bonnellaluminum.com,barbara.stephenson@bonnellaluminum.com,Karen Johnson,2,2009-02-05,kjohnson@example.com
+8,2023-05-05T19:10:12.616,2023-05-05T19:10:12.616,barbara.stephenson@bonnellaluminum.com,barbara.stephenson@bonnellaluminum.com,Richard Wilson,3,2010-02-07,rwilson@example.com
+9,2023-05-05T19:10:12.616,2023-05-05T19:10:12.616,barbara.stephenson@bonnellaluminum.com,barbara.stephenson@bonnellaluminum.com,Linda Jones,1,2005-08-17,ljones@example.com

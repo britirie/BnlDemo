@@ -1,0 +1,71 @@
+{
+  "title": "Department Detail",
+  "description": "Displays Department record",
+  "variables": {
+    "department": {
+      "type": "page:getDepartmentResponse"
+    },
+    "departmentId": {
+      "type": "string",
+      "required": true,
+      "input": "fromUrl"
+    }
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.getDepartmentResponse": {
+      "endpoint": "get_Department",
+      "service": "businessObjects",
+      "path": "request"
+    },
+    "getDepartmentResponse": {
+      "locationObject": {
+        "items": [
+          {
+            "name": "string"
+          }
+        ]
+      },
+      "name": "string"
+    }
+  },
+  "eventListeners": {
+    "backButtonClicked": {
+      "chains": [
+        {
+          "chainId": "goBackChain"
+        }
+      ]
+    },
+    "toggleDrawer": {
+      "chains": [
+        {
+          "chainId": "application:toggleDrawerHandler"
+        }
+      ]
+    },
+    "vbEnter": {
+      "chains": [
+        {
+          "chainId": "loadDepartmentChain"
+        }
+      ]
+    }
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-form-layout": {
+        "path": "ojs/ojformlayout"
+      },
+      "oj-input-text": {
+        "path": "ojs/ojinputtext"
+      },
+      "oj-toolbar": {
+        "path": "ojs/ojtoolbar"
+      }
+    }
+  }
+}

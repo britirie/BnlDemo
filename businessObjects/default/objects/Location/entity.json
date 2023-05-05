@@ -1,0 +1,73 @@
+{
+    "fields": [
+        {
+            "type": "number",
+            "name": "id",
+            "internal": false,
+            "key": true,
+            "oid": "19f83056-65f3-443f-b5a2-e632c47dc5ef",
+            "required": true,
+            "unique": true,
+            "displayLabel": "Id"
+        },
+        {
+            "type": "datetime",
+            "name": "creationDate",
+            "internal": false,
+            "oid": "a55ffb0f-5422-49ca-b9f9-9e19ffe19c2c",
+            "displayLabel": "Created",
+            "historyType": "timeCreated"
+        },
+        {
+            "type": "datetime",
+            "name": "lastUpdateDate",
+            "internal": false,
+            "oid": "9558eb7f-a6c1-4780-b16e-26a7db4137c9",
+            "displayLabel": "Last Updated",
+            "historyType": "timeUpdated"
+        },
+        {
+            "type": "string",
+            "name": "createdBy",
+            "internal": false,
+            "oid": "93501024-d6ec-4386-b19d-b07b511bf555",
+            "displayLabel": "Created By",
+            "historyType": "createdBy"
+        },
+        {
+            "type": "string",
+            "name": "lastUpdatedBy",
+            "internal": false,
+            "oid": "8ae3f7eb-2dc5-4628-9acc-2ece101804ee",
+            "displayLabel": "Last Updated By",
+            "historyType": "updatedBy"
+        },
+{
+            "type": "number",
+            "name": "versionNumber",
+            "internal": false,
+            "oid": "28a791b4-0630-4e59-9ed9-a842df81adeb",
+            "displayLabel": "Version Number",
+            "historyType": "versionNumber"
+        },
+        {
+            "type": "string",
+            "name": "name",
+            "oid": "3ecabb48-bafe-4055-9c4d-d4f3d6e52d4d",
+            "required": true,
+            "displayLabel": "Name"
+        }
+    ],
+    "name": "Location",
+    "oid": "faafc02e-0d21-436f-8363-8de3833f55db",
+    "displayLabel": "Location",
+    "relationships": [
+        {
+            "name": "departmentCollection",
+            "reverseRelationship": "locationObject",
+            "targetEntity": "Department",
+            "type": "incoming",
+            "displayField": "name"
+        }
+    ]
+}

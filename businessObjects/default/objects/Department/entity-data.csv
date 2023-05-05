@@ -1,0 +1,7 @@
+id,creationDate,lastUpdateDate,createdBy,lastUpdatedBy,name,location
+1,2023-05-05T19:09:23.418,2023-05-05T19:09:23.418,barbara.stephenson@bonnellaluminum.com,barbara.stephenson@bonnellaluminum.com,Administration,1
+2,2023-05-05T19:09:23.419,2023-05-05T19:22:49,barbara.stephenson@bonnellaluminum.com,barbara.stephenson@bonnellaluminum.com,Marketing,4
+3,2023-05-05T19:09:23.419,2023-05-05T19:09:23.419,barbara.stephenson@bonnellaluminum.com,barbara.stephenson@bonnellaluminum.com,Purchasing,3
+4,2023-05-05T19:09:23.419,2023-05-05T19:09:23.419,barbara.stephenson@bonnellaluminum.com,barbara.stephenson@bonnellaluminum.com,Human Resources,1
+5,2023-05-05T19:09:23.419,2023-05-05T19:09:23.419,barbara.stephenson@bonnellaluminum.com,barbara.stephenson@bonnellaluminum.com,IT,2
+6,2023-05-05T19:09:23.419,2023-05-05T19:09:23.419,barbara.stephenson@bonnellaluminum.com,barbara.stephenson@bonnellaluminum.com,Sales,3

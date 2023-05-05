@@ -1,0 +1,94 @@
+{
+    "fields": [
+        {
+            "type": "number",
+            "name": "id",
+            "internal": false,
+            "key": true,
+            "oid": "ad5f6ee8-85db-4ba7-aaf5-2adad23a4314",
+            "required": true,
+            "unique": true,
+            "displayLabel": "Id"
+        },
+        {
+            "type": "datetime",
+            "name": "creationDate",
+            "internal": false,
+            "oid": "b441ea14-347d-489a-afae-f1f67462d256",
+            "displayLabel": "Created",
+            "historyType": "timeCreated"
+        },
+        {
+            "type": "datetime",
+            "name": "lastUpdateDate",
+            "internal": false,
+            "oid": "700f01d5-a803-447c-ba2a-b2b4da63be25",
+            "displayLabel": "Last Updated",
+            "historyType": "timeUpdated"
+        },
+        {
+            "type": "string",
+            "name": "createdBy",
+            "internal": false,
+            "oid": "d08a97f9-9adb-4c11-943d-29025defabbc",
+            "displayLabel": "Created By",
+            "historyType": "createdBy"
+        },
+        {
+            "type": "string",
+            "name": "lastUpdatedBy",
+            "internal": false,
+            "oid": "5ed19d11-11e9-4f25-8f5d-21fcd61bad32",
+            "displayLabel": "Last Updated By",
+            "historyType": "updatedBy"
+        },
+{
+            "type": "number",
+            "name": "versionNumber",
+            "internal": false,
+            "oid": "1ffda15e-3689-4af7-ae9d-ae7e00e4a489",
+            "displayLabel": "Version Number",
+            "historyType": "versionNumber"
+        },
+        {
+            "type": "string",
+            "name": "name",
+            "oid": "1affd0f8-4d36-4e94-9c7b-0b829dcc0958",
+            "required": true,
+            "displayLabel": "Name"
+        }        ,
+        {
+            "type": "number",
+            "name": "department",
+            "oid": "155c5e04-40e0-44be-b55f-0100086864ba",
+            "displayLabel": "Department"
+        }        ,
+        {
+            "type": "date",
+            "name": "hireDate",
+            "oid": "dbf574d4-4e3b-477d-b0a2-2491ad42fbbb",
+            "displayLabel": "Hire Date"
+        }        ,
+        {
+            "type": "string",
+            "name": "email",
+            "oid": "b3637dd7-102b-49f8-8d79-f4e885bda1d2",
+            "displayLabel": "Email",
+            "format": "email"
+        }
+    ],
+    "name": "Employee",
+    "oid": "a63fbc27-a34b-4715-83b1-59b353d0478c",
+    "displayLabel": "Employee",
+    "relationships": [
+        {
+            "name": "departmentObject",
+            "reverseRelationship": "employeeCollection",
+            "targetEntity": "Department",
+            "type": "outgoing",
+            "exposeAccessor": true,
+            "mappingField": "department",
+            "deleteRule": "restrict"
+        }
+    ]
+}

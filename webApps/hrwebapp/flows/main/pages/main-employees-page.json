@@ -1,0 +1,121 @@
+{
+  "title": "main employees",
+  "description": "",
+  "variables": {
+    "employeeListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "businessObjects/getall_Employee",
+        "keyAttributes": "id",
+        "itemsPath": "items",
+        "responseType": "getallEmployeeResponse"
+      }
+    },
+    "oj_table_381946666_1SelectedId": {
+      "type": "string",
+      "defaultValue": ""
+    }
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.getallEmployeeResponse": {
+      "endpoint": "getall_Employee",
+      "service": "businessObjects",
+      "path": "response"
+    },
+    "getallEmployeeResponse": {
+      "items": [
+        {
+          "departmentObject": {
+            "items": [
+              {
+                "name": "string"
+              }
+            ]
+          },
+          "email": "string",
+          "hireDate": "string",
+          "id": "number",
+          "name": "string"
+        }
+      ]
+    }
+  },
+  "eventListeners": {
+    "buttonAction": {
+      "chains": [
+        {
+          "chainId": "ButtonActionChain"
+        }
+      ]
+    },
+    "createEmployeeButtonClicked": {
+      "chains": [
+        {
+          "chainId": "navigateToCreateEmployeeChain2"
+        }
+      ]
+    },
+    "deleteEmployeeButtonClicked": {
+      "chains": [
+        {
+          "chainId": "deleteEmployeeChain",
+          "parameters": {
+            "employeeId": "[[ $variables.oj_table_381946666_1SelectedId ]]"
+          }
+        }
+      ]
+    },
+    "editEmployeeButtonClicked": {
+      "chains": [
+        {
+          "chainId": "navigateToEditEmployeeChain",
+          "parameters": {
+            "employeeId": "[[ $variables.oj_table_381946666_1SelectedId ]]"
+          }
+        }
+      ]
+    },
+    "employeeDetailButtonClicked": {
+      "chains": [
+        {
+          "chainId": "navigateToEmployeeDetailChain",
+          "parameters": {
+            "employeeId": "[[ $variables.oj_table_381946666_1SelectedId ]]"
+          }
+        }
+      ]
+    },
+    "oj_table_381946666_1SelectionChanged": {
+      "chains": [
+        {
+          "chainId": "oj_table_381946666_1ChangeSelectionChain",
+          "parameters": {
+            "employeeId": "[[ $event.detail.value.key || '' ]]"
+          }
+        }
+      ]
+    },
+    "toggleDrawer": {
+      "chains": [
+        {
+          "chainId": "application:toggleDrawerHandler"
+        }
+      ]
+    }
+
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-table": {
+        "path": "ojs/ojtable"
+      },
+      "oj-toolbar": {
+        "path": "ojs/ojtoolbar"
+      }
+    }
+  }
+}
